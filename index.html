@@ -1,0 +1,242 @@
+<!--index.html-->
+<!--Estudiante: 02230131001-2026A | Producto: NovaMind | Examen diagnóstico 2026A-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>NovaMind</title>
+</head>
+
+<body data-student="0223013101-2026A">
+    <header>
+        <h1>NovaMind</h1>
+        <p>Asistente personal queorganiza tareas, correos y reuniones mediante IA</p>
+        <img id="perfil" src="img/imgIA.jpg" alt="representacion">
+        <button id="darkMode" class="darkModebt">Modo oscuro/claro</button>
+        <script src="scripts/app.js"><button><a href="#seccion-planes"> Planes y precios</a></button></script>
+
+    </header>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#seccion-caracteristicas">Caracteristicas</a></li>
+            <li><a href="#seccion-funciona">Cómo funciona</a></li>
+            <li><a href="#seccion-planes">Planes y precios</a></li>
+            <li><a href="#seccion-testimonios">Testimonios</a></li>
+            <li><a href="#seccion-contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section id="seccion-caracteristicas">
+        <h2>Características</h2>
+
+        <div class="filtros">
+            <button data-filter="todas">Todas</button>
+            <button data-filter="core">Core</button>
+            <button data-filter="integracion">Integración</button>
+            <button data-filter="seguridad">Seguridad</button>
+        </div>
+
+        <div class="tarjetas">
+            <div class="tarjeta" data-categoria="core">
+                <img src="img/tareas.webp" alt="Gestión de tareas">
+                <h3>Gestión de tareas</h3>
+                <p>Organiza tus tareas de manera lara y eficiente.</p>
+            </div>
+            <div class="tarjeta" data-categoria="integracion">
+                <img src="img/email.webp" alt="Integración con email">
+                <h3>Integración con email</h3>
+                <p>Recibe y responde correos directamente desde la aplicación.</p>
+            </div>
+            <div class="tarjeta" data-categoria="core">
+                <img src="img/recordatorios.webp" alt="Recordatorios personalizados">
+                <h3>Recordatorios personalizados</h3>
+                <p>Configura recordatorios personalizados para no olvidar nada importante.</p>
+            </div>
+            <div class="tarjeta" data-categoria="core">
+                <img src="img/agenda.webp" alt="Agenda automática">
+                <h3>Agenda automática</h3>
+                <p>Organiza tus reuniones y actividades en una agenda inteligente.</p>
+            </div>
+            <div class="tarjeta" data-categoria="core">
+                <img src="img/productividad.webp" alt="Análisis de productividad">
+                <h3>Análisis de productividad</h3>
+                <p>Obtén estadisticas sobre tu rendimiento y optimiza tu productividad.</p>
+            </div>
+            <div class="tarjeta" data-categoria="integraion">
+                <img src="img/interfaz.webp" alt="Interfaz adaptable">
+                <h3>Interfaz adaptable</h3>
+                <p>Adapta la interfaz a tus preferencias y estilo de trabajo.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="seccion-funciona">
+        <h2>Cómo funciona</h2>
+        <div class="gridContainer">
+            <div class="paso">
+                <h3>1. Registra tus tareas</h3>
+                <p>Ingresa tus tareas pendientes de forma rápia y clara. NovaMind lo organizara too e forma automatia en
+                    tu calenario</p>
+            </div>
+            <div class="paso">
+                <h3>2. Conecta tus correos</h3>
+                <p>Sincroniza tu bandeja de entrada para que la IA identifique mensajes importantes. Así nunca pierdes
+                    una reunión o aviso relevante.</p>
+            </div>
+            <div class="paso">
+                <h3>3. Agenda reuniones</h3>
+                <p>NovaMind propone horarios óptimos según tu disponibilidad. Además envía invitaciones y recordatorios
+                    a tus contactos.</p>
+            </div>
+            <div class="paso">
+                <h3>4. Activa recomendaciones</h3>
+                <p>La IA analiza tu rutina y sugiere mejoras de productividad. Recibes alertas inteligentes para
+                    mantener el equilibrio entre trabajo y descanso.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="seccion-planes">
+        <h2>Planes y precios</h2>
+
+        <div class="gridContainer">
+            <div class="plan">
+                <h3>Plan Gratuito</h3>
+                <p class="precio">$0/mes</p>
+                <ul>
+                    <li>Gestión básica de tareas</li>
+                    <li>Integración limitada con correo</li>
+                    <li>Recordatorios simples</li>
+                    <li>Agenda manual</li>
+                    <li>Acceso desde un dispositivo</li>
+                </ul>
+                <button>Comenzar gratis</button>
+            </div>
+
+            <div class="plan recomendado">
+                <h3>Plan Pro</h3>
+                <p class="precio">$9.99/mes</p>
+                <ul>
+                    <li>Gestión avanzada de tareas</li>
+                    <li>Integración completa con correo</li>
+                    <li>Recordatorios inteligentes</li>
+                    <li>Agenda automática</li>
+                    <li>Acceso desde múltiples dispositivos</li>
+                </ul>
+                <button>Elegir Plan Pro</button>
+                <span class="badge">Recomendado</span>
+            </div>
+            <div class="plan">
+                <h3>Plan Empresarial</h3>
+                <p class="precio">$29.99/mes</p>
+                <ul>
+                    <li>Gestión colaborativa de tareas</li>
+                    <li>Integración con múltiples correos</li>
+                    <li>Recordatorios personalizados por equipo</li>
+                    <li>Agenda compartida</li>
+                    <li>Soporte prioritario</li>
+                </ul>
+                <button>Contactar ventas</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="seccion-testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonios-container">
+
+            <div class="testimonio">
+                <h3>Ana Rodríguez</h3>
+                <p><em>Gerente de proyectos en TechSolutions</em></p>
+                <p>NovaMind ha transformado la manera en que organizo mi equipo. La integración con correos y la agenda
+                    automática nos ha permitido reducir errores y mejorar la comunicación interna de forma notable.</p>
+            </div>
+
+            <div class="testimonio">
+                <h3>Carlos Pérez</h3>
+                <p><em>Freelancer en diseño gráfico</em></p>
+                <p>Como trabajador independiente, siempre me costaba mantener un orden entre clientes y entregas. Con
+                    NovaMind puedo registrar tareas, recibir recordatorios y tener todo sincronizado sin perder tiempo
+                    valioso.</p>
+            </div>
+
+            <div class="testimonio">
+                <h3>Laura Gómez</h3>
+                <p><em>Directora de marketing en StartUpX</em></p>
+                <p>La IA de NovaMind me ayuda a priorizar reuniones y correos importantes. Gracias a sus
+                    recomendaciones, mi equipo ha logrado aumentar la productividad y reducir el estrés laboral
+                    significativamente.</p>
+            </div>
+
+            <div class="testimonio">
+                <h3>Jorge Martínez</h3>
+                <p><em>Profesor universitario</em></p>
+                <p>Utilizo NovaMind para organizar clases, reuniones con estudiantes y proyectos de investigación. La
+                    herramienta es intuitiva y me permite dedicar más tiempo a la enseñanza que a la gestión
+                    administrativa.</p>
+            </div>
+
+            <div class="testimonio">
+                <h3>María Fernández</h3>
+                <p><em>CEO de InnovarTech</em></p>
+                <p>En mi empresa, NovaMind ha sido clave para coordinar equipos distribuidos en diferentes países. La
+                    agenda compartida y los recordatorios inteligentes han mejorado la colaboración y la eficiencia
+                    global.</p>
+            </div>
+
+
+
+    </section>
+
+    <section id="seccion-contacto">
+        <h2>Contacto</h2>
+        <p>Si deseas contactarme, puedes rellenar el siguiente formulario:</p>
+        <form id="contactForm">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <small class="error" id="errorNombre"></small><br><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <small class="error" id="errorEmail"></small><br><br>
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+            <small class="error" id="errorAsunto"></small><br><br>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <small class="error" id="errorMensaje"></small><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p id="confirmacion" style="display:none; font-weight:bold; color:green;"></p>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; NovaMind - N.M.Industries</p>
+        <p>"frase x"</p>
+        <nav>
+            <ul class="menu">
+                <li><a href="#seccion-caracteristicas">Caracteristicas</a></li>
+                <li><a href="#seccion-funciona">Cómo funciona</a></li>
+                <li><a href="#seccion-planes">Planes y precios</a></li>
+                <li><a href="#seccion-testimonios">Testimonios</a></li>
+                <li><a href="#seccion-contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <button>Volver al inicio</button>
+    </footer>
+</body>
+
+</html>

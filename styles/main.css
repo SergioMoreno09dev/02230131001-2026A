@@ -1,0 +1,221 @@
+/*main.css*/
+/*Token: 02230131001-2026A | Producto: NovaMind | Examen diagnóstico 2026A*/
+:root {
+    --token: '02230131001-2026A'; 
+    --color-primario: #0078d7;
+    --color-secundario: #f5f5f5;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--color-primario);
+    padding: 0.5rem;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: yellow;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.paso {
+    background-color: var(--color-secundario);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#perfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+#darkMode {
+    position: absolute;
+    right: 35px;
+    top: 30px;
+    height: 35px;
+    width: 120px;
+    border: none;
+    background-color: var(--color-primario);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#darkMode:hover {
+    background-color: #5899de;
+}
+
+/* Social icons */
+.socialItem img {
+    width: 80px; 
+    height: 80px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.socialItem:hover img {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.plan {
+    background-color: var(--color-secundario);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.plan h3 {
+    margin-bottom: 10px;
+}
+
+.plan .precio {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.plan ul {
+    text-align: left;
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.plan button {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plan button:hover {
+    background-color: #5899de;
+}
+
+.plan.recomendado {
+    border: 2px solid var(--color-primario);
+    background-color: #e6f0ff;
+    transform: scale(1.05);
+}
+
+.plan.recomendado .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--color-primario);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.testimonios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.testimonio {
+    background-color: var(--color-secundario);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.testimonio h3 {
+    margin-bottom: 5px;
+}
+
+.testimonio p {
+    margin: 8px 0;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5899de;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--color-primario);
+    color: white;
+    text-align: center;
+}
+
+#volverInicio {
+    margin-top: 10px;
+    background-color: white;
+    color: var(--color-primario);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#volverInicio:hover {
+    background-color: #ddd;
+}
